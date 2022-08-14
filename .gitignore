@@ -1,0 +1,6 @@
+.vscode
+__pycache__
+media
+allchats.db
+myconfig.py
+session_id.session
