@@ -11,7 +11,7 @@ import chat
 
 
 selfbot = TelegramClient("session_id", API_ID, API_HASH)
-selfbot.start(PHONE_NUMBER,first_name="Andrew", last_name="Pstvt")
+selfbot.start(PHONE_NUMBER,first_name="", last_name="")
 # If you have a cloud password, just set field like selfbot.start("PHONE NUMBER", "CLOUD PASSWORD")
 
 #параметры для пользователя по умолчанию

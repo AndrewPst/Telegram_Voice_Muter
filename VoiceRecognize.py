@@ -4,6 +4,7 @@ import subprocess
 import speech_recognition as sr
 import logger
 import os
+from config import *
 import asyncio
 import concurrent.futures
 
@@ -17,7 +18,7 @@ async def recognizeMessage(selfbot, reply_id, chat_id, path): #распозна�
         si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
         CREATE_NO_WINDOW = 0x08000000
         process = subprocess.run(
-            ["""C:\\soft\\ffmpeg-5.0.1-essentials_build\\bin\\ffmpeg.exe""",
+            [ffmpeg_path,
                 '-y', '-i', path, wavfile],
             shell=True, startupinfo=si, creationflags=CREATE_NO_WINDOW)
 
